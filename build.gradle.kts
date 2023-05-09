@@ -35,7 +35,7 @@ dependencies {
     kapt("org.springframework.boot:spring-boot-configuration-processor")
 
     // Bill of Materials (BOM)
-    implementation(platform("io.awspring.cloud:spring-cloud-aws-dependencies:2.4.2"))
+    implementation(platform("io.awspring.cloud:spring-cloud-aws-dependencies:3.0.0"))
     implementation(platform("io.kotest:kotest-bom:5.5.4"))
     implementation(platform("io.mongock:mongock-bom:5.2.2"))
     implementation(platform("org.springdoc:springdoc-openapi:2.0.2"))
