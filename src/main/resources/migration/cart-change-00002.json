@@ -1,0 +1,31 @@
+{
+  "filter": {},
+  "update": [
+    {
+      "$set": {
+        "lineItems": {
+          "$map": {
+            "input": "$lineItems",
+            "as": "item",
+            "in": {
+              "$mergeObjects": [
+                "$$item",
+                {
+                  "variant": {
+                    "$mergeObjects": [
+                      "$$item.variant",
+                      {
+                        "brandId": "$$item.product.brand._id",
+                        "productId": "$$item.product._id"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}
