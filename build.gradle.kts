@@ -39,7 +39,7 @@ dependencies {
     implementation(platform("io.kotest:kotest-bom:5.5.4"))
     implementation(platform("io.mongock:mongock-bom:5.2.2"))
     implementation(platform("org.springdoc:springdoc-openapi:2.0.2"))
-    implementation(platform("org.springframework.cloud:spring-cloud-dependencies:2022.0.0"))
+    implementation(platform("org.springframework.cloud:spring-cloud-dependencies:2022.0.3"))
     implementation(platform("org.testcontainers:testcontainers-bom:1.17.6"))
 
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
